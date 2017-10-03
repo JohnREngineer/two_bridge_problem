@@ -1,3 +1,35 @@
+OVERALL_BOX = [47.548725,-122.363319,47.671399,-122.138271]
+MY_BUS_KEY = 'TEST' 	#Replaced my key with TEST so that the program works but my key is not revealed to the public,
+						#this works as a key but will often return error 503 (overload)
+PATH_TO_DB = '/home/<user>/<project>/myDB.sqlite' ## replace with the path to DB
+PATH_TO_LOG = '/home/<user>/<project>/log.txt' ## replace with the path to log file
+#[shortName, routeId, bridgeName]
+ROUTE_LIST = [['255', '1_100146', 'SR520'], 
+			['271', '1_100162', 'SR520'], 
+			['545', '40_100236', 'SR520'], 
+			['550', '40_100239', 'I90'], 
+			['554', '40_100240', 'I90'], 
+			['277', '1_100168', 'SR520'], 
+			['311', '1_100186', 'SR520'], 
+			['540', '40_100235', 'SR520'], 
+			['542', '40_100511', 'SR520'], 
+			['541', '40_102640', 'SR520'], 
+			['167', '1_100059', 'SR520'], 
+			['555', '40_100241', 'SR520'], 
+			['252', '1_100143', 'SR520'], 
+			['556', '40_100451', 'SR520'], 
+			['257', '1_100148', 'SR520'], 
+			['424', '29_424', 'SR520'], 
+			['268', '1_100159', 'SR520'], 
+			['111', '1_100011', 'I90'], 
+			['114', '1_100013', 'I90'], 
+			['212', '1_100104', 'I90'], 
+			['214', '1_100106', 'I90'], 
+			['216', '1_100108', 'I90'], 
+			['217', '1_100109', 'I90'], 
+			['218', '1_100459', 'I90'], 
+			['219', '1_100110', 'I90']]
+
 def getBusPositionData(routeId, key):
 	import urllib
 	from urllib.request import urlopen
@@ -82,7 +114,7 @@ def updateListAndSendtoDB(oldList, pointList, route, boundingBox):
 def sendDataPointToDB(datapoint):
 	import sqlite3
 
-	db = sqlite3.connect('/home/john/Documents/bus/myDB/mydb')
+	db = sqlite3.connect(PATH_TO_DB)
 	cursor = db.cursor()
 	test= datapoint
 	cursor.execute(''' INSERT INTO datapoints(correspondingTripId, tripId, time, 
@@ -97,7 +129,7 @@ def sendDataPointToDB(datapoint):
 def sendTripToDB(trip):
 	import sqlite3
 
-	db = sqlite3.connect('/home/john/Documents/bus/myDB/mydb')
+	db = sqlite3.connect(PATH_TO_DB)
 	cursor = db.cursor()
 	test= trip
 	cursor.execute(''' INSERT INTO trips(startTime, shortName, routeId, bridgeName) VALUES(?,?,?,?)''', test)
@@ -107,7 +139,7 @@ def sendTripToDB(trip):
 	return returnId
 	
 def logError(errorText):
-	with open("/home/john/Documents/bus/logs/myLog", "a+") as myfile:
+	with open(PATH_TO_LOG, "a+") as myfile:
 		myfile.write(errorText+"\n")
 
 def checkEndTime():
@@ -120,52 +152,14 @@ def main():
 	import time
 	import datetime
 	import csv
-
-	OVERALL_BOX = [47.548725,-122.363319,47.671399,-122.138271]
-	MY_BUS_KEY = 'TEST' 	#Replaced my key with TEST so that the program works but my key is not revealed to the public,
-						#this works as a key but will often return error 503 (overload)
-
-	#[shortName, routeId, bridgeName]
-	routeListImportant = [['255', '1_100146', 'SR520'], 
-				['271', '1_100162', 'SR520'], 
-				['545', '40_100236', 'SR520'], 
-				['542', '40_100511', 'SR520'], 
-				['550', '40_100239', 'I90'], 
-				['554', '40_100240', 'I90']]
-	routeListLong = [['255', '1_100146', 'SR520'], 
-				['271', '1_100162', 'SR520'], 
-				['545', '40_100236', 'SR520'], 
-				['550', '40_100239', 'I90'], 
-				['554', '40_100240', 'I90'], 
-				['277', '1_100168', 'SR520'], 
-				['311', '1_100186', 'SR520'], 
-				['540', '40_100235', 'SR520'], 
-				['542', '40_100511', 'SR520'], 
-				['541', '40_102640', 'SR520'], 
-				['167', '1_100059', 'SR520'], 
-				['555', '40_100241', 'SR520'], 
-				['252', '1_100143', 'SR520'], 
-				['556', '40_100451', 'SR520'], 
-				['257', '1_100148', 'SR520'], 
-				['424', '29_424', 'SR520'], 
-				['268', '1_100159', 'SR520'], 
-				['111', '1_100011', 'I90'], 
-				['114', '1_100013', 'I90'], 
-				['212', '1_100104', 'I90'], 
-				['214', '1_100106', 'I90'], 
-				['216', '1_100108', 'I90'], 
-				['217', '1_100109', 'I90'], 
-				['218', '1_100459', 'I90'], 
-				['219', '1_100110', 'I90']]
 				
-	routeList = routeListLong
 	myList = []
-	for route in routeList:
+	for route in ROUTE_LIST:
 		myList.append([[], [], [], []])
 	while checkEndTime():
 		routeIndex = 0
-		for routeIndex in range(len(routeList)):
-			myNewList, errorMessage = getBusPositionData(routeList[routeIndex][1], MY_BUS_KEY)
+		for routeIndex in range(len(ROUTE_LIST)):
+			myNewList, errorMessage = getBusPositionData(ROUTE_LIST[routeIndex][1], MY_BUS_KEY)
 			if myNewList == -1:
 				errorString = "Error at " + str(datetime.datetime.now()) + ", " + errorMessage
 				print(errorString)
@@ -174,12 +168,12 @@ def main():
 				#time.sleep(3)
 			else:
 				boundingBox = OVERALL_BOX
-				myList[routeIndex] = updateListAndSendtoDB(myList[routeIndex], myNewList, routeList[routeIndex], boundingBox)
+				myList[routeIndex] = updateListAndSendtoDB(myList[routeIndex], myNewList, ROUTE_LIST[routeIndex], boundingBox)
 				numOnBridge=0
 				for stat in myList[routeIndex][2]:
 					if stat == 1:
 						numOnBridge += 1
-				print("Recording " + str(numOnBridge) + "/" + str(len(myNewList)) + " of " + routeList[routeIndex][0] + " buses for " + routeList[routeIndex][2])
+				print("Recording " + str(numOnBridge) + "/" + str(len(myNewList)) + " of " + ROUTE_LIST[routeIndex][0] + " buses for " + ROUTE_LIST[routeIndex][2])
 			time.sleep(1)
 		print("...")
 		time.sleep(100)
