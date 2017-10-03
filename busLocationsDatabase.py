@@ -1,8 +1,8 @@
 OVERALL_BOX = [47.548725,-122.363319,47.671399,-122.138271] #This is an arbitrary box surrounding both bridges but not too big
 MY_BUS_KEY = 'TEST' #Replaced my key with TEST so that the program works but my key is not revealed to the public,
 			#this works as a key but will often return error 503 (overload)
-PATH_TO_DB = '/home/<user>/<project>/myDB.sqlite' ## replace with the path to DB
-PATH_TO_LOG = '/home/<user>/<project>/log.txt' ## replace with the path to log file
+PATH_TO_DB = '/home/<user>/<path to project>/myDB.sqlite' ## replace with the path to DB
+PATH_TO_LOG = '/home/<user>/<path to project>/log.txt' ## replace with the path to log file
 ROUTE_LIST = [['255', '1_100146', 'SR520'], #[shortName, routeId, bridgeName]
 			['271', '1_100162', 'SR520'], 
 			['545', '40_100236', 'SR520'], 
