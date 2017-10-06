@@ -13,8 +13,8 @@ The data is collected and stored in a database using a [busLocationsDatabase.py]
 
 In order to get our first look at the data we create a simple metric of the speed of the bus on the bridge. This metric called simpleMPH simply finds adjacent points of data in each trip which cross the longitude of -122.27 and then calculates the average mph given by the delta distance and the delta time between those two points.
 
-![im1](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/fig1.png)
-![im2](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/fig2.png)
-![im3](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/fig3.png)
+![im1](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig1.png)
+![im2](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig2.png)
+![im3](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig3.png)
 
 See [ExploreSimpleMPH](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/ExploreSimpleMPH.ipynb) for the details of the exploration.
