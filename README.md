@@ -19,7 +19,7 @@ One of the first things encountered was that a large portion of the data had bee
 [ExploreDuplicates.ipynb](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/ExploreDuplicates.ipynb) walks through the exploration of duplicated data. 
 
 ![im1](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig4.png)
-![im2](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig5_2.png)
+![im2](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig5_3.png)
 ![im3](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig6.png)
 
 
