@@ -18,7 +18,7 @@ In order to get our first look at the data we create a simple metric of the spee
 One of the first things encountered was that a large portion of the data had been duplicated.
 [ExploreDuplicates.ipynb](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/ExploreDuplicates.ipynb) walks through the exploration of duplicated data. 
 
-![im1](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig4.png)
+![im1](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig4_2.png)
 ![im2](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig5_3.png)
 ![im3](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig6_2.png)
 
