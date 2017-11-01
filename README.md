@@ -25,5 +25,6 @@ Finally let's see if we can come to any conclusions about the data.
 
 See [Analysis.ipynb](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/Analysis.ipynb) which walks through the analysis of the data. From our analysis it appears that the I90 bridge is significantly faster during the evening rush hour going West.
 
-<img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig1.png" height="175"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig2.png" height="175"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig3.png" height="175">
+<img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig1.png" height="350">
+<img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig2.png" height="175"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig3.png" height="175">
 
