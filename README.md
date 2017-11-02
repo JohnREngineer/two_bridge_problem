@@ -29,3 +29,6 @@ From our analysis it appears that the I90 bridge is significantly faster during 
 
 <img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig1.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig2.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig3.png" width="275">
 
+## 4. Future Possibilities
+
+I'd like to go back and make a more complex metric than the simpleMPH that we started with. It should be possible to map out how long each route should take and find the precise number of minutes that each bus is delayed.
