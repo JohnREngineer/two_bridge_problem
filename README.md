@@ -14,7 +14,7 @@ In order to get our first look at the data we create a simple metric of the spee
 
 See [ExploreSimpleMPH.ipynb](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/ExploreSimpleMPH.ipynb) which walks through the first exploration of the data.
 
-<img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig4_2.png" height="175"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig5_3.png" height="175"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig6_4.png" height="175">
+<img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig4_2.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig5_3.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig6_4.png" width="275">
 
 One of the first issues encountered was that a large portion of the data had been duplicated. See 
 [ExploreDuplicates.ipynb](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/ExploreDuplicates.ipynb) which walks through the exploration of duplicated data. After looking into the documentation more it turned out that the source of this duplication is actually on the OneBusAway side. According to the link below "Agencies often schedule major changes to their system around a particular date, with one GTFS feed for before the service change and a different GTFS feed for after." http://developer.onebusaway.org/modules/onebusaway-gtfs-modules/1.3.3/onebusaway-gtfs-merge-cli.html
