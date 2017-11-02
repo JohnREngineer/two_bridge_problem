@@ -6,7 +6,7 @@ This project aims to analyze traffic patterns on the I-90 and SR-520 bridges con
 
 Data was collected between 7/7 and 8/13 of 2017.
 
-The data was collected and stored in a database using [busLocationsDatabase.py](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/busLocationsDatabase.py) which queries the Rest API every 2 minutes. Each bus that is reporting its location is stored in a list and when it no longer updates its location the trip is recorded in a SQLite database. This program is called by a cron job set to 5:45AM before the first buses at 6:00 AM. Then at the 11:50PM a cron job calls a script which backs up the database using [gdrive](https://github.com/prasmussen/gdrive) to my google drive, a linux command line utility for google drive.
+The data was collected and stored in a database using [busLocationsDatabase.py](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/busLocationsDatabase.py) which every two minutes queries the OneBusAway Rest API created at the University of Washington. Each bus that is reporting its location is stored in a list and when it no longer updates its location the trip is recorded in a SQLite database. This program is called by a cron job set to 5:45AM before the first buses at 6:00 AM. Then at the 11:50PM a cron job calls a script which backs up the database using [gdrive](https://github.com/prasmussen/gdrive) to my google drive, a linux command line utility for google drive.
 
 ## 2. Exploration of the data
 
