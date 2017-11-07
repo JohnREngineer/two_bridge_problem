@@ -1,6 +1,6 @@
 # Bridge Traffic Analysis
 
-This project aims to analyze traffic patterns on the I-90 and SR-520 bridges connecting Seattle and Bellevue in Washington State using the data available through the OneBusAway Rest API developed by The University of Washington. We hope to deterimine if either bridge is faster at different times of the day.
+This project aims to analyze traffic patterns on the I-90 and SR-520 bridges connecting Seattle and Bellevue in Washington State using the data available through the OneBusAway Rest API developed by The University of Washington. We hope to deterimine if the carpool lane on either bridge is faster at different times of the day.
 
 ## 1.Data Collection
 
@@ -26,6 +26,7 @@ Finally let's see if we can come to any conclusions about the data.
 See [Analysis.ipynb](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/Analysis.ipynb) which walks through the analysis of the data. 
 
 From our analysis it appears that the I90 bridge is significantly faster during the evening rush hour going West.
+The SR520 is a toll bridge so at first one might expect there to be less traffic. These results have been anecdotally confirmed by reports from native drivers that take these routes. 
 
 <img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig1.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig2.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig3.png" width="275">
 
