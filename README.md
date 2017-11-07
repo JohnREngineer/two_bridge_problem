@@ -15,6 +15,7 @@ In order to get our first look at the data we create a simple metric of the spee
 See [ExploreSimpleMPH.ipynb](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/ExploreSimpleMPH.ipynb) which walks through the first exploration of the data.
 
 Preview:
+
 <img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig4_2.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig5_3.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig6_4.png" width="275">
 
 One of the first issues encountered was that a large portion of the data had been duplicated. See 
@@ -30,6 +31,7 @@ From our analysis it appears that the I90 bridge is significantly faster during 
 The SR520 is a toll bridge so at first one might expect there to be less traffic. These results have been anecdotally confirmed by reports from native drivers that take these routes. 
 
 Preview:
+
 <img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig1.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig2.png" width="275"><img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/analyze_fig3.png" width="275">
 
 ## 4. Future Possibilities
