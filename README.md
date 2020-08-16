@@ -1,4 +1,4 @@
-# Bridge Traffic Analysis
+# Transit Traffic Analysis
 
 This project aims to analyze traffic patterns on the I-90 and SR-520 bridges connecting Seattle and Bellevue in Washington State using the data available through the OneBusAway Rest API developed by The University of Washington. We hope to deterimine if the carpool lane on either bridge is faster at different times of the day.
 
