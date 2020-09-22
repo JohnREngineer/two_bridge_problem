@@ -20,7 +20,7 @@ Figure 3
 
 <img src="https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/images/fig6_4.png">
 
-## 3. Analysis and Prediction
+## 3. Analysis
 
 First we look for patterns in our data in [Analysis.ipynb](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/Analysis.ipynb).
 
