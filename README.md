@@ -2,7 +2,7 @@
 
 Which bridge is faster, SR-520 or I-90?
 
-This project aims to determine which bus you should cross to get between Seattle and Bellevue using location data provided by [The University of Washington's OneBusAway RESTful API](http://developer.onebusaway.org/modules/onebusaway-application-modules/1.1.14/api/where/index.html).
+This project aims to determine which bridge you should cross to get between Seattle and Bellevue using location data provided by [The University of Washington's OneBusAway RESTful API](http://developer.onebusaway.org/modules/onebusaway-application-modules/1.1.14/api/where/index.html).
 
 ## 1. Collection and Cleansing
 Using [busLocationsDatabase.py](https://github.com/JonathanERuhnke/BridgeTrafficAnalysis-OneBusAway/blob/master/busLocationsDatabase.py) we collect and store bus locations in a SQLite database between 7/7/2017 and 8/13/2017.
