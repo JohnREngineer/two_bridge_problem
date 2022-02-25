@@ -1,4 +1,4 @@
-# Two Bridge Problem
+# Two Bridge Question
 
 Which bridge is faster, SR-520 or I-90?
 
